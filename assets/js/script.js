@@ -1371,7 +1371,7 @@ addEventListener('DOMContentLoaded', () => {
             return e.target.closest('.hex').classList.add('incorrect');
 
         e.target.closest('.hex').classList.remove('incorrect');
-        jsonObject.embed.color = parseInt(inputValue, 16);
+        jsonObject.embeds[0].color = parseInt(inputValue, 16);
         buildEmbed();
     })
 
